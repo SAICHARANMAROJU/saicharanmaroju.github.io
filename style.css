@@ -690,6 +690,10 @@ footer{
     display: flex;
 }
 
+.middle-footer ul li{
+    list-style: none;
+}
+
 .footer_menu_list a{
     text-decoration: none;
     color: var(--text-color);

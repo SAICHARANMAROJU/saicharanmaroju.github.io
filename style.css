@@ -688,6 +688,7 @@ footer{
 
 .middle-footer .footer-menu{
     display: flex;
+    list-style: none;
 }
 
 .footer_menu_list a{

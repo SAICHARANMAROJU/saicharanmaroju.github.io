@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-} 
+}
 
 :root {
     --body-color: rgba(250, 250, 250);
@@ -40,7 +40,7 @@ body.dark {
     --color-white: #fff;
     --text-color: #fff;
 
-    --nav-icon: #fff;
+    --nav-icon: #484848;
     --logo-color: #fff;
     --icon-color: #8749f2;
     --mode-color: #fff;
@@ -126,13 +126,14 @@ nav ul li a::after {
     color: var(--nav-icon);
 }
 
+
 .mode {
     display: flex;
     align-items: center;
     margin-right: -2%;
 }
 
-.moon-sun {
+.dark-light {
     position: relative;
     display: flex;
     align-items: center;
@@ -144,7 +145,7 @@ nav ul li a::after {
     background: var(--mode-color);
 }
 
-.moon-sun:is(#moon, #sun) {
+.dark-light:is(#moon, #sun) {
     position: absolute;
     transition: .2s ease-in-out;
 }
@@ -182,16 +183,12 @@ body.dark #moon {
     width: 50%;
     padding-left: 20px;
     margin-top: 10%;
-    overflow: visible;
 }
 
 .featured-text .hello {
-    position: relative;
-    top: -10px;
-    left: 360px;
     font-size: 50px;
     font-weight: 500;
-    margin-bottom: 66px;
+    margin-bottom: -20px;
     color: var(--text-color);
 }
 
@@ -201,30 +198,20 @@ body.dark #moon {
     margin-block: 20px;
     color: #8749f2;
     margin-bottom: 10px;
-    position: relative;
-    top: 50%;
 }
 
 .typedText {
-    position: absolute;
-    margin-left: 690px;
     font-family: sans-serif;
     color: #8749f2;
-    font-size: 40px;
+    font-size: 8px;
     font-weight: 600;
-    margin-top: -200px;
     text-transform: capitalize;
 }
 
 .text-info {
-    
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: var(--text-color);
-    text-align: center;
-    visibility: visible;
-    position:relative;
-    left: 360px;
 }
 
 .text-btn {
@@ -237,12 +224,8 @@ body.dark #moon {
 .text-btn .btn {
     border: none;
     color: #f4f4f4;
-    position: relative;
-    left: 362px;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
 }
-
 
 .btn {
     text-decoration: none;
@@ -263,14 +246,12 @@ i {
     font-size: 16px;
 }
 
-.social_icons1 {
+.social_icons1{
     display: flex;
     margin-top: 30px;
     margin-left: 5px;
     gap: 32px;
-    position: relative;
-    left: 340px;  
-    z-index: 10000;
+    
 }
 
 .social_icons1 .icon{
@@ -302,29 +283,22 @@ i {
     position: relative;
     top: -20vh;
     left: 95vh;
-    z-index: 1;
 }
 
-
-
-.lamp {
-    margin-left: 727px;
-    margin-top: -500px;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    left: -754px;
-    top: 50px;
+.image{
+    margin-top: 10%;
+    width: 500px;
+    height: 700px;
+    border-radius: 0% 40% 0% 0%;
+    overflow: hidden;
+    animation: imgFloat 5s ease-in-out infinite;
 }
 
-.light1{
-    width: 650px;
-    position: relative;
-    top: -110px;
-    left: -350px;
-    
+.image img{
+    width:400px;
+    height: 500px;
+    object-fit: cover;
 }
-
 
 @keyframes imgFloat {
     50%{
@@ -714,6 +688,7 @@ footer{
 
 .middle-footer .footer-menu{
     display: flex;
+    list-style: none;
 }
 
 .footer_menu_list a{
@@ -933,11 +908,8 @@ footer{
     }
 }
 
-
 @media screen and (max-width: 643.2px) {
-    
-    
-    nav{
+    mav{
         width: 100%;
     }
     .nav-menu {
@@ -1063,7 +1035,7 @@ footer{
         background: transparent;
         box-shadow: 1px 8px 10px 2px var(--first-shadow);
         padding: 10px 20px;
-        margin-left: 65px;
+        margin-left: 62px;
         border: 2px solid #fff;
         border-radius: 20px;
         transition: 0.5s ease-in-out;
@@ -1083,6 +1055,3 @@ footer{
     }
     
 }
-    
-
-    
